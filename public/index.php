@@ -1,9 +1,9 @@
 <?php
 
-// pipeline test 8
+// pipeline test 9
 
 // rappel : gare direction univ = SEM:2216
-$stop = htmlspecialchars($_GET["stop"]);  
+$stop = htmlspecialchars($_GET["stop"]);
 
 
 function curl($href=""){
