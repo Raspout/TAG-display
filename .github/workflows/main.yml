@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    uses: bxb100.github/workflows/action-upload-webdav@v0.0.3
+    uses: bxb100.github/workflows/action-upload-webdav/action.yaml@v0.0.3
     with:
       webdav_address: ${{secrets.address}}
       webdav_username: ${{secrets.username}}
