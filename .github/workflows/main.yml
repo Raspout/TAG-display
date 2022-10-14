@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    paths:
+      - 'public/**'
+
+
+jobs:
+  deploy:
+    uses: bxb100/action-upload-webdav@v0.0.3
+    with:
+      webdav_address: ${{secrets.address}}
+      webdav_username: ${{secrets.username}}
+      webdav_password: ${{secrets.password}}
+      webdav_upload_path: "/www/"
+      files: "./public/**"
