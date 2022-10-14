@@ -1,5 +1,7 @@
 <?php
 
+// pipeline test comment
+
 // rappel : gare direction univ = SEM:2216
 $stop = htmlspecialchars($_GET["stop"]);  
 
