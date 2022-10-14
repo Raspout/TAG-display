@@ -6,11 +6,13 @@ on:
 
 
 jobs:
-  deploy:
-    uses: bxb100.github/workflows/action-upload-webdav/action.yaml@v0.0.3
-    with:
-      webdav_address: ${{secrets.address}}
-      webdav_username: ${{secrets.username}}
-      webdav_password: ${{secrets.password}}
-      webdav_upload_path: "/www/"
-      files: "./public/**"
+  deploy-to-webdav:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bxb100/action-upload-webdav@v0.0.3
+        with:
+          webdav_address: ${{secrets.address}}
+          webdav_username: ${{secrets.username}}
+          webdav_password: ${{secrets.password}}
+          webdav_upload_path: "/www/"
+          files: "./public/**"
