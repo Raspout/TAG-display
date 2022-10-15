@@ -11,8 +11,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: push to webdav
-        run: |
-          pwd
-          ls -al
-          curl --user '${{secrets.username}}:${{secrets.password}}' -T 'public/**' '${{secrets.address}}/www/'
+      - name: push code
+        uses: bxb100/action-upload-webdav@v1
+        with:
+          webdav_address: ${{secrets.address}}
+          webdav_username: ${{secrets.username}}
+          webdav_password: ${{secrets.password}}
+          webdav_upload_path: "www/"
+          files: "./public/**"
