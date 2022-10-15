@@ -1,7 +1,5 @@
 <?php
 
-// pipeline test 17
-
 // rappel : gare direction univ = SEM:2216
 $stop = htmlspecialchars($_GET["stop"]);
 
@@ -40,7 +38,7 @@ date_default_timezone_set("Europe/Paris");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="1">
     <title><?php echo $lignes[0]["times"][0]["stopName"]; ?></title>
 </head>
 <body>
