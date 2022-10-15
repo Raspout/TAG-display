@@ -42,7 +42,6 @@ date_default_timezone_set("Europe/Paris");
     <title><?php echo $lignes[0]["times"][0]["stopName"]; ?></title>
 </head>
 <body>
-    <h1>COUCOU</h1>
     <table>
         <tr>
             <th>ligne</th>
