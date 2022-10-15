@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: push to webdav
         run: |
-          curl --user '${{secrets.username}}:${{secrets.password}}' -T '/public/**' '${{secrets.address}}/www/'
+          curl --user '${{secrets.username}}:${{secrets.password}}' -T 'public/*' '${{secrets.address}}/www/'
