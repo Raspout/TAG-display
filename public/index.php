@@ -60,7 +60,7 @@ date_default_timezone_set("Europe/Paris");
             </td>
             <td>
                 <?php
-                echo $ligne["times"][0]["headsign"];
+                echo $ligne["pattern"]["lastStopName"];
                 ?>
             </td>
             <?php foreach($ligne["times"] as $time) {?>
